@@ -1,4 +1,5 @@
 import { Component, input } from '@angular/core';
+import { RouterLink, RouterModule } from '@angular/router';
 
 export interface HousingLocationInfo {
   id: number,
@@ -13,7 +14,7 @@ export interface HousingLocationInfo {
 
 @Component({
   selector: 'app-housing-location',
-  imports: [],
+  imports: [RouterModule, RouterLink],
   templateUrl: './housing-location.html',
   styleUrls: ['./housing-location.scss'],
 })
