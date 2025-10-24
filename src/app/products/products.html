@@ -1,0 +1,21 @@
+<div class="shopping-app">
+   <h1>Input Signals Demo</h1>
+
+   <div class="demo-section">
+      <h2>Signal Inputs (Parent → Child)</h2>
+      <p>Data flows down from parent to child via signal inputs:</p>
+
+      <!-- TODO: Change from static values to dynamic signal values -->
+      <!-- <product-card name="Static Product" price="99" available="true" /> -->
+       <app-product-card
+         [name]="productName()"
+         [price]="productPrice()"
+         [available]="productAvailable()"
+       />
+
+      <!-- TODO: Add controls to test reactive updates -->
+      <div class="controls">
+         <!-- Add buttons to update product data and toggle availability -->
+      </div>
+   </div>
+</div>
